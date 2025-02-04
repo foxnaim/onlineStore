@@ -6,7 +6,8 @@ import About from './pages/About.jsx';
 import Content from './pages/Content.jsx';  
 import Product from './pages/Product.jsx';
 import Cart from './pages/Cart.jsx';
-
+import Login from './pages/Login.jsx';
+import PlaceOrder from './pages/PlaceOrder';
 
 export default function App() {
   return (
@@ -19,6 +20,8 @@ export default function App() {
           <Route path='/contact' element={<Content/>}/>
           <Route path='/product/:productId' element={<Product/>}/>
           <Route path='/cart' element={<Cart/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/place-order' element={<PlaceOrder/>}/>
         </Routes>
       </div>
     </React.Fragment>
