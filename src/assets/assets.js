@@ -13,6 +13,7 @@ import user10 from './user/user10.png';
 import back from "./icon/back.svg";
 import search from "./icon/search.svg";
 import profile from "./icon/profile.svg";
+import Menu from "./icon/menu_icon.svg"
 
 export const assets = {
   logo, Banner, user1,user2, user3,user4,user5,
@@ -24,6 +25,7 @@ export const assets = {
   back,
   search,
   profile,
+  Menu
 };
 
 export const products = [

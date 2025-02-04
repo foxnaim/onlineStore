@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { assets } from "../assets/assets";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
+
+ const [open, setOpen] = useState(false);
+
   return (
     <React.Fragment>
       <div className="flex items-center justify-between py-5 font-medium">
@@ -44,6 +47,20 @@ export default function Navbar() {
           <img src={assets.back}/>
           <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px] ">10</p>
           </Link>
+          <img onClick={()=>setOpen(true)} src={assets.Menu} className="w-5 cursor-pointer sm:hidden"/>
+        </div>
+        {/*sidebar menu*/}
+        <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${open ? 'w-full' :'w-0'}`}>
+         <div className="flex flex-col text-rgay-600">
+          <div onClick={()=>setOpen(false)} className="flex items-center gap-4 p-3 cursor-pointer">
+           <img src="https://cdn3.iconfinder.com/data/icons/multimedia-24px/24/chevron_left_previous_arrow-512.png" className="h-4 w-[30px] h-[30px]"/>
+           <p>black</p>
+          </div>
+          <NavLink className="py-2 pl-6 border text-center pt-10" onClick={()=> setOpen(false)} to="/">HOME</NavLink>
+          <NavLink className="py-2 pl-6 border text-center pt-10" onClick={()=> setOpen(false)} to="/collection">COLLECTION</NavLink>
+          <NavLink className="py-2 pl-6 border text-center pt-10" onClick={()=> setOpen(false)} to="/about">ABOUT</NavLink>
+          <NavLink className="py-2 pl-6 border text-center pt-10" onClick={()=> setOpen(false)} to="/contact">CONTACT</NavLink>
+         </div>
         </div>
       </div>
     </React.Fragment>
