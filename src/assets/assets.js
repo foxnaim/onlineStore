@@ -10,20 +10,20 @@ import user7 from './user/user7.png';
 import user8 from './user/user8.png';
 import user9 from './user/user9.png';
 import user10 from './user/user10.png';
+import back from "./icon/back.svg";
+import search from "./icon/search.svg";
+import profile from "./icon/profile.svg";
 
 export const assets = {
-  logo,
-  Banner,
-  user1,
-  user2,
-  user3,
-  user4,
-  user5,
+  logo, Banner, user1,user2, user3,user4,user5,
   user6,
   user7,
   user8,
   user9,
   user10,
+  back,
+  search,
+  profile,
 };
 
 export const products = [
