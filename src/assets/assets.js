@@ -1,19 +1,19 @@
 import logo from './logo.png';
-import banner from './banner.jpg';
-import user1 from './user1.jpg';
-import user2 from './user2.jpg';
-import user3 from './user3.jpg';
-import user4 from './user4.jpg';
-import user5 from './user5.jpg';
-import user6 from './user6.jpg';
-import user7 from './user7.jpg';
-import user8 from './user8.jpg';
-import user9 from './user9.jpg';
-import user10 from './user10.jpg';
+import Banner from './banner.png';
+import user1 from './user/user1.png';
+import user2 from './user/user2.png';
+import user3 from './user/user3.png';
+import user4 from './user/user4.png';
+import user5 from './user/user5.png';
+import user6 from './user/user6.png';
+import user7 from './user/user7.png';
+import user8 from './user/user8.png';
+import user9 from './user/user9.png';
+import user10 from './user/user10.png';
 
 export const assets = {
   logo,
-  banner,
+  Banner,
   user1,
   user2,
   user3,
