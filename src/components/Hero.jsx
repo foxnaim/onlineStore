@@ -4,7 +4,7 @@ import { assets } from '../assets/assets'
 function Hero() {
   return (
     <React.Fragment>
-     <div className='flex flex-col sm:flex-row border border-gray-400'>
+     <div className='flex flex-col sm:flex-row border border-gray-400 rounded-xl'>
       <div className='w-full sm:w-1/2 flex items-center justify-center py-10 sm:py-0'>
         <div className="text-[#414141]">
          <div className='flex items-center gap-2 '>
@@ -18,7 +18,7 @@ function Hero() {
          </div>
         </div>
       </div>
-      <img src={assets.Banner} className='w-full sm:w-1/2'/>
+      <img src={assets.Banner} className='w-full sm:w-1/2 rounded-xl'/>
      </div>
     </React.Fragment>
   )
