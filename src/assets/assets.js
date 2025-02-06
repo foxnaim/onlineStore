@@ -34,7 +34,7 @@ export const products = [
     name: "Product 1",
     description: "Description 1",
     price: 100,
-    image: user1,
+    image: user1,  
     category: "category 1",
     sizes: ["S", "M", "L", "XL"],
     date: "2021-01-01",
